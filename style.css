@@ -9,13 +9,55 @@
 
 body {
   background: linear-gradient(to bottom right, #5c258d, #4389a2);
-  /* background: linear-gradient(to bottom right, #ed4264, #ffedbc); */
-
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quote-box {
+    width: 90%;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .quote-box h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .quote-box blockquote {
+    font-size: 22px;
+  }
+
+  .quote-box blockquote::before,
+  .quote-box blockquote::after {
+    font-size: 32px;
+  }
+
+  .quote-box span::before {
+    width: 15px;
+    left: -20px;
+  }
+
+  .quote-box div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-box button {
+    padding: 0 15px;
+    height: 40px;
+    margin: 3px;
+  }
+
+  .quote-box button img {
+    width: 16px;
+    margin-right: 8px;
+  }
 }
 
 .quote-box {
